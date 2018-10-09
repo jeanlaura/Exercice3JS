@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>EXERCICE THREE</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body id="exercice3">
+    <div class="container-fluid">
+      <h1>EXERCICE 3 : PROMPTER</h1>
+    </div>
+    <script>
+        var firstname1 = prompt('Ecrivez votre prénom !');
+        var regex = /^[A-Za-z]+$/;
+        if (regex.test(firstname1)) {
+          alert('Bonjour, '+firstname1+' !');
+        }else{
+          alert('Bonjour, vous vous êtes trompés, veuillez recommencez, merci bien !');
+        };
+    </script>
+  </body>
+</html>
